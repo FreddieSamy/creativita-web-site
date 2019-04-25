@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Creatività</title>
+	<style type="text/css">
+	ul {
+  		list-style-type: none;
+  		margin: 0;
+  		padding: 0;
+  		overflow: hidden;
+  		background-color: #183546;
+  		position: -webkit-sticky;
+  		position: sticky;
+  		top: 0;
+  		border-radius: 25px;
+  		height: 54px;
+	}
+	li {
+  		float: left;
+	}
+	li a {
+  		display: block;
+  		color: white;
+  		text-align: center;
+  		padding: 18px 16px;
+  		text-decoration: none;
+	}
+	li a.text:hover {
+  		background-color: #010A11;
+	}
+	.img:hover {
+		animation-name: Key1;
+    	animation-duration: 0.1s;
+		animation-iteration-count: infinite;
+
+	}
+	@keyframes Key1 {
+    	0% {transform: translate(0px,-8px)}
+    	25% {transform: translate(2px,-8px)}
+    	50% {transform: translate(0px,-8px)}
+    	75% {transform: translate(-2px,-8px)}
+    	100% {transform: translate(0px,-8px)}
+	}
+	.active {
+  		background-color: #01FC00;
+  		color: #183546;
+	}
+	.active:hover{
+		background-color: #3CC800;
+	}
+	body{
+		margin: 0;
+  		padding: 0;
+  		background-image:linear-gradient(to bottom,#010A11,#566573);
+  		height: 700px;
+	}
+	.footer {
+  		position: fixed;
+  		left: 0;
+  		bottom: 0;
+  		width: 100%;
+  		background-color: #183546;
+  		color: white;
+  		text-align: center;
+  		border-radius: 25px;
+  		height: 50px;
+	}
+	#footerimg{
+		float:left ;
+		border-radius: 25px;
+	}
+	.img{
+	width:35px;
+	margin: 0px;
+	transform: translate(0px, -8px);
+	}
+	::-webkit-scrollbar {
+  		width: 10px;
+	}
+	::-webkit-scrollbar-track {
+  		background:  #183546; 
+	}
+	::-webkit-scrollbar-thumb {
+  		background: #888; 
+	}
+	::-webkit-scrollbar-thumb:hover {
+ 		background: #555; 
+	}
+	#date{
+		float: right;
+		color: #3CC800;
+		transform: translate(-50px, -52px);
+		font-size: 18px;
+	}
+	
+	.p{
+		width: 70%;
+		color: white;
+
+	}
+	hr{
+		width: 50%;
+	}
+	.freddie{
+		border-radius: 100px;
+		width: 180px;
+		border-style: solid;
+		border-color:#183546; 
+	}
+	.fb{
+		width:35px;
+	}
+	.fb:hover {
+		transform:scale(1.5,1.5);
+
+	}
+	</style>
+</head>
+<body>
+	<a id="Top"></a>
+	<ul>
+  		<li><a class="active" href="index.html#Top">Home</a></li>
+ 		<li><a  href="products.html" class="text">Products</a></li>
+  		<li><a class="text" href="3d-printing.html">3D-Printing</a></li>
+  		<li><a class="text" href="design.html">Design</a></li>
+  		<li><a class="text" href="about.html">About</a></li>
+  		<li style="float:right"><a href="https://www.facebook.com/3DPrintingAlex/"?><img class="img" src="indexImgs/fb.png" style="padding-right:20px"></a></li>
+  		<li style="float:right"><a href="https://www.instagram.com/creativita20/"?><img class="img" src="indexImgs/insta.png"></a></li>
+  		<li style="float:right"><a href="https://wa.me/+201271952114"><img class="img" src="indexImgs/whats.png"></a></li>
+  		<li style="float:right"><a href="https://www.youtube.com/results?search_query=3d+printing+satisfying"?><img class="img" src="indexImgs/youtube.png"></a></li>
+	</ul>
+	<div class="footer">
+		<img id="footerimg" src="indexImgs/2.png" height="50px">
+    	<p>&copy; Creatività 2018</p>
+       	<p id="date"></p>
+	</div>
+	<script>
+		var d = new Date().toDateString();
+		document.getElementById("date").innerHTML = d;
+	</script>
+	<center>
+	<h1 style="color:#D0D3D4">Our Company<hr></h1>
+	<p class="p">We’re a truly Local team of dedicated young people working on disrupting the traditional way of manufacturing and leading the next industrial revolution. Creatività is the Egyption largest online company of manufacturing services. With production facilities connected in all over Egypt, the Creatività online platform helps product designers and engineers find the fastest and most price competitive manufacturing solution.</p>
+
+    <p class="p">Founded in 2016, we have since produced more than 1000 parts, making Creatività the Local leader in distributed manufacturing.Our company headquarters are located in  Alexandria, Egypt. Are you really good at what you do? And do you love working in the exciting environment of a fast growing startup? Then this is your chance: contact us!</p>
+    <br>
+    <hr style="width:95%">
+    <br><br>
+    <img class="freddie" src="aboutImgs/1.jpg">
+    <p>Freddie Samy Azmy<br>
+    CEO</p>
+    <a target="blank" href="https://www.facebook.com/freedy.samy"><img class="fb" src="aboutImgs/fb.png"></a>
+    </center>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Creatività</title>
+	<style type="text/css">
+	ul {
+  		list-style-type: none;
+  		margin: 0;
+  		padding: 0;
+  		overflow: hidden;
+  		background-color: #183546;
+  		position: -webkit-sticky;
+  		position: sticky;
+  		top: 0;
+  		border-radius: 25px;
+  		height: 54px;
+  		z-index: 3;
+	}
+	li {
+  		float: left;
+	}
+	li a {
+  		display: block;
+  		color: white;
+  		text-align: center;
+  		padding: 18px 16px;
+  		text-decoration: none;
+	}
+	li a.text:hover {
+  		background-color: #010A11;
+	}
+	.img:hover {
+		animation-name: Key1;
+    	animation-duration: 0.1s;
+		animation-iteration-count: infinite;
+
+	}
+	@keyframes Key1 {
+    	0% {transform: translate(0px,-8px)}
+    	25% {transform: translate(2px,-8px)}
+    	50% {transform: translate(0px,-8px)}
+    	75% {transform: translate(-2px,-8px)}
+    	100% {transform: translate(0px,-8px)}
+	}
+	.active {
+  		background-color: #01FC00;
+  		color: #183546;
+	}
+	.active:hover{
+		background-color: #3CC800;
+	}
+	body{
+		margin: 0;
+  		padding: 0;
+  		background-color:#010A11;
+	}
+	.footer {
+  		position: fixed;
+  		left: 0;
+  		bottom: 0;
+  		width: 100%;
+  		background-color: #183546;
+  		color: white;
+  		text-align: center;
+  		border-radius: 25px;
+  		height: 50px;
+  		z-index: 3;
+	}
+	#footerimg{
+		float:left ;
+		border-radius: 25px;
+	}
+	.img{
+	width:35px;
+	margin: 0px;
+	transform: translate(0px, -8px);
+	}
+	::-webkit-scrollbar {
+  		width: 10px;
+	}
+	::-webkit-scrollbar-track {
+  		background:  #183546; 
+	}
+	::-webkit-scrollbar-thumb {
+  		background: #888; 
+	}
+	::-webkit-scrollbar-thumb:hover {
+ 		background: #555; 
+	}
+	a.anchor:link{
+  		color: white;
+  		text-decoration: none;
+  		padding: 18px 16px;
+	}
+	#date{
+		float: right;
+		color: #3CC800;
+		transform: translate(-50px, -52px);
+		font-size: 18px;
+	}
+	.gif{
+		margin: 0px;
+		padding: 0px;
+		width:100%;
+		height: 350px;
+		background-color:white; 
+	}
+	.left
+	{
+		position:relative;
+		transform:translate(-120px,-150px);
+		background-color: Transparent;
+    	border: none;
+    	cursor:pointer;
+    	font-size: 23px;
+    	color: white;
+  		-webkit-text-fill-color: #183546;
+  		-webkit-text-stroke-width: 0.1px;
+  		-webkit-text-stroke-color: white;
+    }
+	.right
+	{
+		position:relative;
+		transform:translate(120px,-150px);
+		background-color: Transparent;
+    	border: none;
+    	cursor:pointer;
+    	font-size: 23px;
+    	color: white;
+  		-webkit-text-fill-color: #183546;
+  		-webkit-text-stroke-width: 0.1px;
+  		-webkit-text-stroke-color: white;
+	}
+	.im1{
+		display: none;
+		width:320px;
+		height: 230px;
+		position:relative;
+		border-radius: 25px;
+		border-style: solid;
+		border-color: #183546;
+		border-width: 4px;
+		margin: 10px; 
+	}
+	.im2{
+		display: none;
+		width:320px;
+		height: 230px;
+		position:relative;
+		border-radius: 25px;
+		border-style: solid;
+		border-color: #183546;
+		border-width: 4px;
+		margin: 10px; 	}
+	.im3{
+		display: none;
+		width:320px;
+		height: 230px;
+		position:relative;
+		border-radius: 25px;
+		border-style: solid;
+		border-color: #183546;
+		border-width: 4px;
+		margin: 10px; 
+	}
+	.im4{
+		display: none;
+		width:320px;
+		height: 230px;
+		position:relative;
+		border-radius: 25px;
+		border-style: solid;
+		border-color: #183546;
+		border-width: 4px;
+		margin: 10px; 
+	}
+	.photo{
+		color: white;
+		text-align: center;
+	}
+	hr{
+		width: 50%;
+	}
+	pre{
+		color: white;
+		border-style: solid;
+		border-radius: 25px;
+	}
+	</style>
+</head>
+<body>
+	<a id="Top"></a>
+	<ul>
+  		<li><a class="active" href="index.html#Top">Home</a></li>
+ 		<li><a  href="products.html" class="text">Products</a></li>
+  		<li><a class="text" href="3d-printing.html">3D-Printing</a></li>
+  		<li><a class="text" href="design.html">Design</a></li>
+  		<li><a class="text" href="about.html">About</a></li>
+  		<li style="float:right"><a href="https://www.facebook.com/3DPrintingAlex/"?><img class="img" src="indexImgs/fb.png" style="padding-right:20px"></a></li>
+  		<li style="float:right"><a href="https://www.instagram.com/creativita20/"?><img class="img" src="indexImgs/insta.png"></a></li>
+  		<li style="float:right"><a href="https://wa.me/+201271952114"><img class="img" src="indexImgs/whats.png"></a></li>
+  		<li style="float:right"><a href="https://www.youtube.com/results?search_query=3d+printing+satisfying"?><img class="img" src="indexImgs/youtube.png"></a></li>
+	</ul>
+	<div class="footer">
+		<img id="footerimg" src="indexImgs/2.png" height="50px">
+    	<p>&copy; Creatività 2018</p>
+       	<p id="date"></p>
+	</div>
+	<script>
+		var d = new Date().toDateString();
+		document.getElementById("date").innerHTML = d;
+	</script>
+	<br>
+	<br>
+	<center>
+	<table class="photo">
+		<tr>
+			<td>
+				Fine Arts
+		<div id="e">
+			<img src="3dprintingImgs/1.jpg" width="100%" class="im1">
+			<img src="3dprintingImgs/2.jpg" width="100%" class="im1">
+			<img src="3dprintingImgs/3.jpg" width="100%" class="im1">
+			<img src="3dprintingImgs/4.jpg" width="100%" class="im1">
+			<img src="3dprintingImgs/5.jpg" width="100%" class="im1">
+			<img src="3dprintingImgs/6.jpg" width="100%" class="im1">
+			<img src="3dprintingImgs/7.jpg" width="100%" class="im1">
+			<form>
+				<input type="button" onclick="plusing(-1,1)" class="left" value="<">
+				<input type="button" onclick="plusing(+1,1)" class="right" value=">">
+			</form>
+		</div>
+	</td>
+	<td>
+		Architecture
+		<div id="d">
+			<img src="3dprintingImgs/8.jpg" width="100%" class="im2">
+			<img src="3dprintingImgs/9.jpg" width="100%" class="im2">
+			<img src="3dprintingImgs/10.jpg" width="100%" class="im2">
+			<img src="3dprintingImgs/11.jpg" width="100%" class="im2">
+			<img src="3dprintingImgs/12.jpg" width="100%" class="im2">
+			<form>
+				<input type="button" onclick="plusing(-1,2)" class="left" value="<">
+				<input type="button" onclick="plusing(+1,2)" class="right" value=">">
+			</form>
+		</div>
+	</td>
+		<td>
+			Robotics
+		<div id="c">
+			<img src="3dprintingImgs/15.jpg" width="100%" class="im3">
+			<img src="3dprintingImgs/14.jpg" width="100%" class="im3">
+			<img src="3dprintingImgs/13.jpg" width="100%" class="im3">
+			<img src="3dprintingImgs/16.jpg" width="100%" class="im3">
+			<form>
+				<input type="button" onclick="plusing(-1,3)" class="left" value="<">
+				<input type="button" onclick="plusing(+1,3)" class="right" value=">">
+			</form>
+		</div>
+	</td>
+	<td>
+		mechanics
+		<div id="b">
+			<img src="3dprintingImgs/18.jpg" width="100%" class="im4">
+			<img src="3dprintingImgs/21.jpg" width="100%" class="im4">
+			<img src="3dprintingImgs/19.jpg" width="100%" class="im4">
+			<img src="3dprintingImgs/20.jpg" width="100%" class="im4">
+			<img src="3dprintingImgs/17.jpg" width="100%" class="im4">
+			<form>
+				<input type="button" onclick="plusing(-1,4)" class="left" value="<">
+				<input type="button" onclick="plusing(+1,4)" class="right" value=">">
+			</form>
+		</div>
+	</td>
+	</tr>
+</table>
+</center>
+	<script type="text/javascript">
+		var index1=-1;
+		var index2=-1;
+		var index3=-1;
+		var index4=-1;
+		var x1=document.getElementsByClassName("im1");
+		var x2=document.getElementsByClassName("im2");
+		var x3=document.getElementsByClassName("im3");
+		var x4=document.getElementsByClassName("im4");
+		x1[0].style.display="block";
+		x2[0].style.display="block";
+		x3[0].style.display="block";
+		x4[0].style.display="block";
+		auto();
+		function plusing(n,s)
+		{
+			if(s==1){
+				index1+=n;
+				for(i=0;i<x1.length;i++)
+				{
+					x1[i].style.display="none";
+				}
+				x1[((index1+(Math.abs(index1)*x1.length))%x1.length)].style.display="block";
+			}
+			else if(s==2){
+				index2+=n;
+				for(i=0;i<x2.length;i++)
+				{
+					x2[i].style.display="none";
+				}
+				x2[((index2+(Math.abs(index2)*x2.length))%x2.length)].style.display="block";
+		    }
+			else if(s==3){
+				index3+=n;
+				for(i=0;i<x3.length;i++)
+				{
+					x3[i].style.display="none";
+				}
+				x3[((index3+(Math.abs(index3)*x3.length))%x3.length)].style.display="block";
+			}
+			else{
+				index4+=n;
+				for(i=0;i<x4.length;i++)
+				{
+					x4[i].style.display="none";
+				}
+				x4[((index4+(Math.abs(index4)*x4.length))%x4.length)].style.display="block";
+			}
+		}
+	</script>
+	<div class="gif">
+		<center>
+			<br><br>
+			<img width="45%" src="3dprintingImgs/0.gif">
+			<table width="45%">
+				<tr>
+					<td width="20%"><center>Send us a 3D model with (.stl) extension, or get help from a professional designer</center></td>
+					<td width="20%"><center>Choose your material and finish.</center></td>
+					<td width="20%"><center>We'll 3D print and post process your product.</center></td>
+					<td width="20%"><center>Receive your custom 3D printed product.</center></td>
+				</tr>
+			</table>
+		</center>	
+	</div>
+<br><br>
+	<pre>
+
+<center>Contact our Team
+<hr>
+Phone:  +201271952114
+
+E-mail: Sci.FreddieSamy.2017@alexu.edu.eg</center>
+	</pre>
+
+	<br><br><center><a class="anchor" href="#Top">Top</a></center><br><br><br><br><br>
+</body>
+</html>

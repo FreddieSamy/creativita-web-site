@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Creatività</title>
+	<style type="text/css">
+	ul {
+  		list-style-type: none;
+  		margin: 0;
+  		padding: 0;
+  		overflow: hidden;
+  		background-color: #183546;
+  		position:fixed;
+  		top: 0;
+  		border-radius: 25px;
+  		height: 54px;
+  		width: 100%;
+	}
+	li {
+  		float: left;
+	}
+	li a {
+  		display: block;
+  		color: white;
+  		text-align: center;
+  		padding: 18px 16px;
+  		text-decoration: none;
+	}
+	li a.text:hover {
+  		background-color: #010A11;
+	}
+	.img:hover {
+		animation-name: Key1;
+    	animation-duration: 0.1s;
+		animation-iteration-count: infinite;
+
+	}
+	@keyframes Key1 {
+    	0% {transform: translate(0px,-8px)}
+    	25% {transform: translate(2px,-8px)}
+    	50% {transform: translate(0px,-8px)}
+    	75% {transform: translate(-2px,-8px)}
+    	100% {transform: translate(0px,-8px)}
+	}
+	.active {
+  		background-color: #01FC00;
+  		color: #183546;
+	}
+	.active:hover{
+		background-color: #3CC800;
+	}
+	body{
+		margin: 0;
+  		padding: 0;
+  		background-image:linear-gradient(to bottom,#010A11,#566573);
+  		height: 900px;
+	}
+	.footer {
+  		position: fixed;
+  		left: 0;
+  		bottom: 0;
+  		width: 100%;
+  		background-color: #183546;
+  		color: white;
+  		text-align: center;
+  		border-radius: 25px;
+  		height: 50px;
+	}
+	#footerimg{
+		float:left ;
+		border-radius: 25px;
+	}
+	a.anchor:link{
+  		color: white;
+  		text-decoration: none;
+  		padding: 18px 16px;
+	}
+	.img{
+	width:35px;
+	margin: 0px;
+	transform: translate(0px, -8px);
+	}
+	::-webkit-scrollbar {
+  		width: 10px;
+	}
+	::-webkit-scrollbar-track {
+  		background:  #183546; 
+	}
+	::-webkit-scrollbar-thumb {
+  		background: #888; 
+	}
+	::-webkit-scrollbar-thumb:hover {
+ 		background: #555; 
+	}
+	#date{
+		float: right;
+		color: #3CC800;
+		transform: translate(-50px, -52px);
+		font-size: 18px;
+	}
+	.design{
+		color: white;
+		margin: 50px;
+		width: 20%;
+	}
+	.idea{
+		position: absolute;
+		right: 0;
+		top:0;
+		margin: 70px;
+		width:500px;
+	}
+	table{
+		background-color: white;
+		width: 100%;
+	}
+	td{
+		margin: 100px;
+		padding: 100px;
+	}
+	hr{
+		width: 50%;
+	}
+	pre{
+		color: white;
+		border-style: solid;
+		border-radius: 25px;
+	}
+	</style>
+</head>
+<body>
+	
+	<ul>
+  		<li><a class="active" href="index.html#Top">Home</a></li>
+ 		<li><a  href="products.html" class="text">Products</a></li>
+  		<li><a class="text" href="3d-printing.html">3D-Printing</a></li>
+  		<li><a class="text" href="design.html">Design</a></li>
+  		<li><a class="text" href="about.html">About</a></li>
+  		<li style="float:right"><a href="https://www.facebook.com/3DPrintingAlex/"?><img class="img" src="indexImgs/fb.png" style="padding-right:20px"></a></li>
+  		<li style="float:right"><a href="https://www.instagram.com/creativita20/"?><img class="img" src="indexImgs/insta.png"></a></li>
+  		<li style="float:right"><a href="https://wa.me/+201271952114"><img class="img" src="indexImgs/whats.png"></a></li>
+  		<li style="float:right"><a href="https://www.youtube.com/results?search_query=3d+printing+satisfying"?><img class="img" src="indexImgs/youtube.png"></a></li>
+	</ul>
+	<div class="footer">
+		<img id="footerimg" src="indexImgs/2.png" height="50px">
+    	<p>&copy; Creatività 2018</p>
+       	<p id="date"></p>
+	</div>
+	<script>
+		var d = new Date().toDateString();
+		document.getElementById("date").innerHTML = d;
+	</script>
+	<a id="Top"></a>
+	<div class="design">
+	<br><br><br>
+	<h1>HAVE AN IDEA?</h1>
+    <p>Bring your idea for a product to life with the help 
+    of our expert 3D designers.</p>
+	</div>
+<center>
+	<table>
+		<tr>
+			<td>
+				<h1>1 Consultation</h1>
+				Not sure where to start? Chat with our expert design team and discuss project goals, design inspiration, and materials.
+			</td>
+			<td >
+				<img width="500px" src="designImgs/1.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img width="500px" src="designImgs/2.jpg">
+			</td>
+			<td>
+				<h1>2 Design it</h1>
+				Work with a 3d modeler, provide feedback, and see your project come to life.
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h1>3 Ready to manufacture</h1>
+				We deliver a 3D file you can use to instantly start manufacturing with Shapeways.
+			</td>
+			<td >
+				<img width="500px" src="designImgs/3.jpg">
+			</td>
+		</tr>
+	</table>
+</center>
+	<br><br>
+	<pre>
+
+<center>Contact our Team
+<hr>
+Phone:  +201271952114
+
+E-mail: Sci.FreddieSamy.2017@alexu.edu.eg</center>
+	</pre>
+    <br><br><center><a class="anchor" href="#Top">Top</a></center><br><br><br><br><br>
+</body>
+</html>

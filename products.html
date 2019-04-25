@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Creatività</title>
+	<style type="text/css">
+	ul {
+  		list-style-type: none;
+  		margin: 0;
+  		padding: 0;
+  		overflow: hidden;
+  		background-color: #183546;
+  		position: -webkit-sticky;
+  		position: sticky;
+  		top: 0;
+  		border-radius: 25px;
+  		height: 54px;
+  		z-index: 2;
+	}
+	li {
+  		float: left;
+	}
+	li a {
+  		display: block;
+  		color: white;
+  		text-align: center;
+  		padding: 18px 16px;
+  		text-decoration: none;
+	}
+	li a.text:hover {
+  		background-color: #010A11;
+	}
+	.active {
+  		background-color: #01FC00;
+  		color: #183546;
+	}
+	.active:hover{
+		background-color: #3CC800;
+	}
+	body{
+		bottom: 0;
+		margin: 0;
+  		padding: 0;
+  		background-image:linear-gradient(to bottom,#010A11,#566573);
+  		height: 2100px;
+	}
+	.img{
+		width:35px;
+		margin: 0px;
+		transform: translate(0px, -8px);
+	}
+	.img:hover {
+		animation-name: Key1;
+    	animation-duration: 0.1s;
+		animation-iteration-count: infinite;
+
+	}
+	@keyframes Key1 {
+    	0% {transform: translate(0px,-8px)}
+    	25% {transform: translate(2px,-8px)}
+    	50% {transform: translate(0px,-8px)}
+    	75% {transform: translate(-2px,-8px)}
+    	100% {transform: translate(0px,-8px)}
+	}
+	.footer {
+  		position: fixed;
+  		left: 0;
+  		bottom: 0;
+  		width: 100%;
+  		background-color: #183546;
+  		color: white;
+  		text-align: center;
+  		border-radius: 25px;
+  		height: 50px;
+	}
+	#footerimg{
+		float:left ;
+		border-radius: 25px;
+	}
+	#date{
+		float: right;
+		color: #3CC800;
+		transform: translate(-50px, -52px);
+		font-size: 18px;
+	}
+	::-webkit-scrollbar {
+  		width: 10px;
+	}
+	::-webkit-scrollbar-track {
+  		background:  #183546; 
+	}
+	::-webkit-scrollbar-thumb {
+  		background: #888; 
+	}
+	::-webkit-scrollbar-thumb:hover {
+ 		background: #555; 
+	}
+	.left
+	{
+		position:relative;
+		transform:translate(-220px,-180px);
+		background-color: Transparent;
+    	border: none;
+    	cursor:pointer;
+    	font-size: 23px;
+    	color: white;
+  		-webkit-text-fill-color: #183546;
+  		-webkit-text-stroke-width: 0.1px;
+  		-webkit-text-stroke-color: white;
+    }
+	.right
+	{
+		position:relative;
+		transform:translate(220px,-180px);
+		background-color: Transparent;
+    	border: none;
+    	cursor:pointer;
+    	font-size: 23px;
+    	color: white;
+  		-webkit-text-fill-color: #183546;
+  		-webkit-text-stroke-width: 0.1px;
+  		-webkit-text-stroke-color: white;
+	}
+	.im{
+		display: none;
+		width:500px;
+		height: 350px;
+		position:relative;
+		border-radius: 25px;
+		border-style: solid;
+		border-color: #183546;
+		border-width: 4px;
+		top:5px;
+	}
+	.item:hover{
+		transform: scale(1.7, 1.7);
+	}
+	.item{
+		width :200px;
+		border-radius: 25px;
+		margin: 10px;
+	}
+	td{
+		width: 210px;
+		height: 210px;
+		border-radius: 25px;
+		border-style: solid;
+		border-color: #183546;
+		border-width: 1.5px;
+	}
+	p{
+		color: white;
+	}
+	a.anchor:link{
+  		color: black;
+  		text-decoration: none;
+  		padding: 18px 16px;
+  		position: absolute;
+	}
+	hr{
+		width:60%;
+	}
+	</style>
+</head>
+<body>
+	<a id="Top"></a>
+	<ul>
+  		<li><a class="active" href="index.html#Top">Home</a></li>
+  		<li><a class="text" href="products.html">Products</a></li>
+  		<li><a class="text" href="3d-printing.html">3D-Printing</a></li>
+  		<li><a class="text" href="design.html">Design</a></li>
+  		<li><a class="text" href="about.html">About</a></li>
+  		<li style="float:right"><a href="https://www.facebook.com/3DPrintingAlex/"?><img class="img" src="indexImgs/fb.png" style="padding-right:20px"></a></li>
+  		<li style="float:right"><a href="https://www.instagram.com/creativita20/"?><img class="img" src="indexImgs/insta.png"></a></li>
+  		<li style="float:right"><a href="https://wa.me/+201271952114"><img class="img" src="indexImgs/whats.png"></a></li>
+  		<li style="float:right"><a href="https://www.youtube.com/results?search_query=3d+printing+satisfying"?><img class="img" src="indexImgs/youtube.png"></a></li>
+	</ul>
+	<div class="footer">
+		<img id="footerimg" src="indexImgs/2.png" height="50px">
+    	<p>&copy; Creatività 2018</p>
+       	<p id="date"></p>
+	</div>
+	<script>
+		var d = new Date().toDateString();
+		document.getElementById("date").innerHTML = d;
+	</script>
+	<center>
+		<div>
+			<img src="productsImgs/0.jpg" width="100%" class="im">
+			<img src="productsImgs/00.jpg" width="100%" class="im">
+			<img src="productsImgs/5.jpg" width="100%" class="im">
+			<img src="productsImgs/6.jpg" width="100%" class="im">
+			<img src="productsImgs/7.jpeg" width="100%" class="im">
+			<img src="productsImgs/8.jpg" width="100%" class="im">
+			<img src="productsImgs/9.jpg" width="100%" class="im">
+			<img src="productsImgs/10.jpg" width="100%" class="im">
+			<img src="productsImgs/11.jpg" width="100%" class="im">
+			<img src="productsImgs/12.jpg" width="100%" class="im">
+			<img src="productsImgs/13.jpg" width="100%" class="im">
+			<img src="productsImgs/14.jpg" width="100%" class="im">
+			<img src="productsImgs/15.jpg" width="100%" class="im">
+			<img src="productsImgs/16.jpg" width="100%" class="im">
+			<img src="productsImgs/17.jpg" width="100%" class="im">
+			<img src="productsImgs/18.jpg" width="100%" class="im">
+			<img src="productsImgs/19.jpg" width="100%" class="im">
+			<img src="productsImgs/20.jpg" width="100%" class="im">
+			<img src="productsImgs/21.jpg" width="100%" class="im">
+			<img src="productsImgs/22.jpg" width="100%" class="im">
+			<img src="productsImgs/23.jpg" width="100%" class="im">
+			<img src="productsImgs/24.jpg" width="100%" class="im">
+			<img src="productsImgs/25.jpg" width="100%" class="im">
+			<img src="productsImgs/26.jpg" width="100%" class="im">
+			<img src="productsImgs/27.jpg" width="100%" class="im">
+			<img src="productsImgs/28.jpg" width="100%" class="im">
+			<img src="productsImgs/29.jpg" width="100%" class="im">
+			<img src="productsImgs/30.jpg" width="100%" class="im">
+			<img src="productsImgs/31.jpg" width="100%" class="im">
+			<img src="productsImgs/32.jpg" width="100%" class="im">
+			<img src="productsImgs/33.jpg" width="100%" class="im">
+			<img src="productsImgs/34.jpg" width="100%" class="im">
+			<img src="productsImgs/1.jpg" width="100%" class="im">
+			<img src="productsImgs/2.jpg" width="100%" class="im">
+			<img src="productsImgs/3.jpg" width="100%" class="im">
+			<img src="productsImgs/4.jpg" width="100%" class="im">
+			<form>
+				<input type="button" onclick="plusing(-1)" class="left" value="<">
+				<input type="button" onclick="plusing(+1)" class="right" value=">">
+			</form>
+		</div>
+		Some Of Our Products
+		<hr>
+		<table >
+			<tr>
+				<td><center><img src="productsImgs/1.jpg" class="item"><p>Shopping Bag Handle</p></center></td>
+
+				<td><center><img src="productsImgs/2.jpg" class="item"><p>Simple Toothepaste Squeezer</p></center></td>
+
+				<td><center><img src="productsImgs/3.jpg" class="item"><p>Slide Bag Clip</p></center></td>
+
+				<td><center><img src="productsImgs/4.jpg" class="item"><p>Toothbrush Cover</p></center></td>
+
+				<td><center><img src="productsImgs/22.jpg" class="item"><p>Seacret Shelf</p></center></td>
+
+				<td><center><img src="productsImgs/25.jpg" class="item"><p>Credit Card Cutlery</p></center></td>
+			</tr>
+			<tr>
+				<td><center><img src="productsImgs/26.jpg" class="item"><p>Cable Clip Wire Organizer USB Phone</p></center></td>
+
+				<td><center><img src="productsImgs/33.jpg" class="item"><p>Measuring Cube</p></center></td>
+
+				<td><center><img src="productsImgs/34.jpg" class="item"><p>Big StrawGlass Practical</p></center></td>
+
+				<td><center><img src="productsImgs/5.jpg" class="item"><p>Book Clips set</p></center></td>
+
+				<td><center><img src="productsImgs/6.jpg" class="item"><p>Book Cover Pen Holder</p></center></td>
+
+				<td><center><img src="productsImgs/7.jpeg" class="item"><p>One Hand Book Holder</p></center></td>
+			</tr>
+			<tr>
+				<td><center><img src="productsImgs/8.jpg" class="item"><p>Gyro 7 Rings</p></center></td>
+
+				<td><center><img src="productsImgs/9.jpg" class="item"><p>Nautilus Gears</p></center></td>
+
+				<td><center><img src="productsImgs/21.jpg" class="item"><p>Puzzle Triple twins</p></center></td>
+
+				<td><center><img src="productsImgs/28.jpg" class="item"><p>Surprise Egg 4 Tiny Excavator</p></center></td>
+
+				<td><center><img src="productsImgs/29.jpg" class="item"><p>Surprise Egg 5 Tiny Fire Truck</p></center></td>
+
+				<td><center><img src="productsImgs/30.jpg" class="item"><p>Gyro Air</p></center></td>
+			</tr>
+			<tr>
+				<td><center><img src="productsImgs/31.jpg" class="item"><p>Hexagon into Square Puzzle</p></center></td>
+
+				<td><center><img src="productsImgs/32.jpg" class="item"><p>infinite cube</p></center></td>
+
+				<td><center><img src="productsImgs/11.jpg" class="item"><p>Earbud Case</p></center></td>
+
+				<td><center><img src="productsImgs/12.jpg" class="item"><p>iPhone USB Cable Protector</p></center></td>
+
+				<td><center><img src="productsImgs/13.jpg" class="item"><p>Samsung Micro USB cable protector</p></center></td>
+
+				<td><center><img src="productsImgs/14.jpg" class="item"><p>Hex Phone Sound Amplifier</p></center></td>
+			</tr>
+			<tr>
+				<td><center><img src="productsImgs/15.jpg" class="item"><p>Phone Charging Holder</p></center></td>
+
+				<td><center><img src="productsImgs/23.jpg" class="item"><p>Smart Outlet Boxzy</p></center></td>
+
+				<td><center><img src="productsImgs/24.jpg" class="item"><p>Keychain Smartphone Stand</p></center></td>
+
+				<td><center><img src="productsImgs/16.jpg" class="item"><p>Web camera cover</p></center></td>
+
+				<td><center><img src="productsImgs/27.jpg" class="item"><p>CDs stand</p></center></td>
+
+				<td><center><img src="productsImgs/20.jpg" class="item"><p>lighting photo (flat)</p></center></td>
+			</tr>
+			<tr>
+				<td><center><img src="productsImgs/17.jpg" class="item"><p>lighting photo (cube)</p></center></td>
+
+				<td><center><img src="productsImgs/18.jpg" class="item"><p>lighting photo (cylinder)</p></center></td>
+
+				<td><center><img src="productsImgs/19.jpg" class="item"><p>lighting photo (curved)</p></center></td>
+
+				<td><center><img src="productsImgs/10.jpg" class="item"><p>Periodic Table</p></center></td>
+
+				<td><center><img src="productsImgs/00.jpg" class="item"><p>Flexy Hand 2</p></center></td>
+
+				<td><center><img src="productsImgs/0.jpg" class="item"><p>Prosthetic Hand</p></center></td>
+			</tr>
+		</table>
+	</center>
+	<br><br><center><a class="anchor" href="#Top">Top</a></center><br><br>
+	<script type="text/javascript">
+		var index=-1;
+		var x=document.getElementsByClassName("im");
+		x[0].style.display="block";
+		auto();
+		function plusing(n)
+		{
+			index+=n;
+			for(i=0;i<x.length;i++)
+			{
+				x[i].style.display="none";
+			}
+			x[((index+(Math.abs(index)*x.length))%x.length)].style.display="block";
+		}
+		function auto()
+		{
+			index++;
+			for(i=0;i<x.length;i++)
+			{
+				x[i].style.display="none"
+			}
+			x[((index+(Math.abs(index)*x.length))%x.length)].style.display="block";
+			setTimeout(auto,2000);
+		}
+	</script>
+</body>
+</html>
